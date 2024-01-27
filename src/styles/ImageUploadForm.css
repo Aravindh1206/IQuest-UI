@@ -1,0 +1,92 @@
+/* ImageUploadForm.css */
+.upload-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to full viewport height */
+  }
+  
+  .upload-form {
+    max-width: 500px; /* Set the maximum width of the form */
+    width: 100%; /* Take full width of its container */
+    padding: 20px;
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 10px;
+    background-color: #f1f1f1; /* Light gray background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Rest of your existing CSS */
+  
+  
+  
+  .form-title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3498db; /* Blue text color */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+  }
+  
+  .form-control,
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .form-control:focus,
+  .form-textarea:focus {
+    border-color: #3498db; /* Blue border color on focus */
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    margin-bottom: 10px; /* Add margin between buttons */
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9; /* Darker blue background color on hover */
+  }
+  
+  .preview-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .preview-title {
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    max-height: 200px; /* Adjust the maximum height as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    object-fit: contain; /* Ensure the image fits within the container */
+  }
+  
+  /* Style for video element */
+  video {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  

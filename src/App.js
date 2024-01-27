@@ -1,14 +1,24 @@
 // App.js
-import React from 'react';
-import Navigation from './components/Navigation';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navigation";
+import ImageProcessing from "./components/ImageProcessing";
+import Aviation from "./components/Aviation";
+import NLPTextAnalyzer from "./components/NLPTextAnalyzer";
 
-const App = () => {
-  return (
-    <div>
-      <Navigation />
-      {/* Your other content goes here */}
-    </div>
-  );
-};
+
+function App() {
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route exact path="/" component={App} />
+                <Route path="/image-processing" element={<ImageProcessing />} />
+                <Route path="/aviation" element={<Aviation />} />
+                <Route path="/nlp-text-analyzer" element={<NLPTextAnalyzer />} />
+            </Routes>
+        </Router>
+    );
+}
 
 export default App;
