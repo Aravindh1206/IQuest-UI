@@ -1,7 +1,6 @@
 // App.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navigation";
 import ImageProcessing from "./components/ImageProcessing";
 import Aviation from "./components/Aviation";
 import NLPTextAnalyzer from "./components/NLPTextAnalyzer";
@@ -14,11 +13,12 @@ function App() {
       <ButtonAppBar />
       <Routes>
         <Route exact path="/" component={App} />
-        <Route path="/image-processing" element={<ImageProcessing />} />
+        <Route path="/imageprocessing" element={<ImageProcessing />} />
         <Route path="/aviation" element={<Aviation />} />
-        <Route path="/nlp-text-analyzer" element={<NLPTextAnalyzer />} />
+        <Route path="/NLPTextAnalyzer" element={<NLPTextAnalyzer />} />
       </Routes>
     </Router>
+    
   );
 }
 

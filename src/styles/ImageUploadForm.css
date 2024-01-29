@@ -17,8 +17,44 @@
   }
   
   /* Rest of your existing CSS */
-  
-  
+  #file-input {
+    display: none; /* Hide the default file input */
+}
+
+.file-input-container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Ensure text is centered as well */
+  height: 100px; /* Or any height you desire */
+  border: 2px dashed #3498DB; /* Style as needed */
+  border-radius: 10px; /* Style as needed */
+  margin: auto; /* Center the container itself if it's not full width */
+  padding: 20px; /* Add some padding */
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.file-input-container p {
+    font-size: 14px;
+    color: #7F8C8D;
+}
+
+.browse-btn {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.browse-btn:hover {
+    background-color: #2980B9;
+}
   
   .form-title {
     margin-bottom: 20px;
